@@ -1,65 +1,66 @@
-<<<<<<< HEAD
-# Team1-Machine-Learning
-=======
 # Team1-Machine-Learning
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+[![CCDS Project template](https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter)](https://cookiecutter-data-science.drivendata.org/)
 
-Tugas Project Python Machine Learning Team 1
+> Tugas Project Python Machine Learning — Team 1, Kelas 24C3.
 
-## Project Organization
+## 👥 Anggota Tim
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         team1_machine_learning and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── team1_machine_learning   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes team1_machine_learning a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+| Nama             | NIM      | Role              |
+|------------------|----------|-------------------|
+| Edi Suryadi      | 20125068 | Product Manager   |
+| Dede Rifki       | 20124089 | Software Engineer |
+| Nazwa Nurhafidah | 20124105 | UI/UX Designer    |
+| Najwa Annisa     | 20124093 | Software Engineer |
 
---------
+## 📁 Struktur Folder (CCDS)
 
->>>>>>> 19c4111 (:tada: initial project)
+~~~
+├── LICENSE
+├── Makefile
+├── README.md
+├── docs/              <- Dokumentasi proyek
+├── models/            <- Model ML yang sudah dilatih
+├── notebooks/         <- Jupyter notebooks eksplorasi
+├── references/        <- Referensi & data dictionary
+├── reports/           <- Laporan & visualisasi
+├── tests/             <- Unit tests
+├── pyproject.toml
+└── team1_machine_learning/   <- Source code utama
+    ├── config.py
+    ├── dataset.py
+    ├── features.py
+    ├── plots.py
+    └── modeling/
+        ├── train.py
+        └── predict.py
+~~~
+
+## ⚙️ Cara Setup
+
+~~~bash
+git clone https://github.com/edi20125068-UTD/Team1-Machine-Learning.git
+cd Team1-Machine-Learning
+pip install -r requirements.txt
+~~~
+
+## ✍️ Panduan Commit (Gitmoji)
+
+Format: `<emoji> <tipe>: <deskripsi>`
+
+| Emoji | Tipe | Kapan Dipakai |
+|-------|------|---------------|
+| ✨ | feat | Tambah fitur/folder baru |
+| 🐛 | fix | Perbaiki bug |
+| 📝 | docs | Update dokumentasi |
+| 📦 | build | Update requirements.txt |
+| 🎨 | style | Formatting |
+| 🔥 | remove | Hapus file |
+
+## 🌿 Branch Strategy
+
+- `main` → branch utama, jangan commit langsung
+- `feature/<nama>` → untuk fitur baru
+- `docs/<nama>` → untuk update dokumentasi
+- `fix/<nama>` → untuk perbaikan bug
+- Selalu buat Pull Request sebelum merge ke main!
